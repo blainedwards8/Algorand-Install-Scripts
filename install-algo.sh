@@ -33,7 +33,5 @@ source ~/.bashrc
 
 rm -r ./get-docker.sh
 
-rm -r ./install-algo.sh
-
 #enter into the sandbox directory
 cd sandbox
