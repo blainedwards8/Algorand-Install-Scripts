@@ -23,7 +23,7 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 
 #install docker compose
-sudo pip3 install docker-compose
+pip3 install docker-compose
 
 #clone the sandbox repo
 git clone https://github.com/algorand/sandbox.git
