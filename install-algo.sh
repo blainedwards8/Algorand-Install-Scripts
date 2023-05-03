@@ -1,9 +1,9 @@
 #upgrade the system
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 #remove unecessary packages
-sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove -y docker docker-engine docker.io containerd runc
 
 #install curl
 sudo apt install -y curl
@@ -30,6 +30,10 @@ git clone https://github.com/algorand/sandbox.git
 
 #reload bash
 source ~/.bashrc
+
+rm -r ./get-docker.sh
+
+rm -r ./install-algo.sh
 
 #enter into the sandbox directory
 cd sandbox
